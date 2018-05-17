@@ -1,0 +1,26 @@
+{
+    "name": "asteriskaelhighlighting",
+    "displayName": "asterisk-ael",
+    "description": "Syntax Highlighting For AEL language",
+    "version": "0.0.1",
+    "publisher": "lkorokh",
+    "engines": {
+        "vscode": "^1.23.0"
+    },
+    "categories": [
+        "Programming Languages"
+    ],
+    "contributes": {
+        "languages": [{
+            "id": "ael",
+            "aliases": ["AEL2", "ael"],
+            "extensions": [".ael"],
+            "configuration": "./language-configuration.json"
+        }],
+        "grammars": [{
+            "language": "ael",
+            "scopeName": "source.ael",
+            "path": "./syntaxes/ael.tmLanguage"
+        }]
+    }
+}
